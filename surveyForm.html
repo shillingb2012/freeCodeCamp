@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Brock's Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Brock's Project Survey Form</h1>
+    <p id="description"><em>Survey to provide feedback on the project types and recommendations</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="LastName, FirstName" /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="myEmail_123@gmail.com" /></label>
+        <label id="number-label" for="number">Age (years): <input id="number" name="number" type="number" min=18 max=99 required placeholder="xx" /></label>
+      </fieldset>
+      <fieldset>
+	<label for="dropdown">Would you recommend my survey?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Of Course!</option>
+            <option value="2">Absolutely Not!</option>
+            <option value="3">Potentially</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+	<p>Do you want to see more?</p>
+        <label for="yesProjects"><input id="yesProjects" value="yes" type="radio" name="moreProjects" class="inline" /> Yes, I would love to see more</label>
+        <label for="noProjects"><input id="noProjects" value="no" type="radio" name="moreProjects" class="inline" /> Nah, these suck</label>
+      </fieldset>
+      <fieldset>
+	  <p>What types of projects would you like to see?</p>
+          <label for="htmlCss"><input id="htmlCss" name="typesOfProjects" value="htmlCss" type="checkbox" class="inline" /> HTML/CSS </label>
+          <label for="python"><input id="python" name="typesOfProjects" value="python" type="checkbox" class="inline" /> Python </label>
+          <label for="sqlDatabase"><input id="sqlDatabase" name="typesOfProjects" value="sqlDatabase" type="checkbox" class="inline" /> SQL/Database </label>
+      </fieldset>
+      <fieldset>
+	<label for="userRecs">Other Recommendations:
+          <textarea id="userRecs" name="userRecs" rows="4" cols="30" placeholder="Provide any other recommendations for projects and improvements"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
