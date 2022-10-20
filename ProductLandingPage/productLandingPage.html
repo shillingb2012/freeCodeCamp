@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Liverpool FC</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <section>
+                <header id="header">
+                    <img 
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPzdZ1OirImgwC-qEkaqpiRqNfg-WbU0pwA&usqp=CAU" 
+                        alt="liverpool logo black and white" id="header-img" 
+                    />
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a class="nav-link" href="#news">Latest</a></li>
+                            <li><a class="nav-link" href="#matches">Matches</a></li>
+                            <li><a class="nav-link" href="#stats">Stats</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
+            <section class="content">
+                <div id="news">
+                    <iframe
+                        id="video"
+                        src="https://www.youtube.com/embed/SEKS_fNESeo"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                    <h3>Sign up to get the latest news about the club</h3>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input
+                          name="email"
+                          id="email"
+                          type="email"
+                          placeholder="Enter your email address"
+                          required
+                        />
+                        <input id="submit" type="submit" value="Sign Up" class="btn" />
+                    </form>
+                </div>
+                <div id="matches">
+                    <div class="match">
+                        <div class="match-title">Upcoming</div>
+                        <h2>Nottm Forest v Liverpool</h2>
+                        <p>Saturday, October 22, 6:30AM</p>
+                        <button class="btn"><a target="_blank" href="https://www.google.com/search?q=liverpool&rlz=1C1GCEB_enUS1022US1022&oq=liverpool&aqs=chrome.0.0i271j46i131i433i512j69i59l3j69i61l2j69i60.2017j0j7&sourceid=chrome&ie=UTF-8#sie=m;/g/11t3cwwpcf;2;/m/02_tc;dt;fp;1;;;">Details</a></button>
+                    </div>
+                    <div class="match">
+                        <div class="match-title">Latest Premier League Result</div>
+                        <h2>Liverpool v West Ham</h2>
+                        <p>Result (Win): 1 - 0</p>
+                        <button class="btn"><a target="_blank" href="https://www.google.com/search?q=liverpool&rlz=1C1GCEB_enUS1022US1022&oq=liverpool&aqs=chrome.0.0i271j46i67i131i433j69i59l3j69i61l2j69i60.1151j1j7&sourceid=chrome&ie=UTF-8#sie=m;/g/11s38h9mc_;2;/m/02_tc;dt;fp;1;;;">Details</a></button>
+                    </div>
+                    <div class="match">
+                        <div class="match-title">Latest Champions League Result</div>
+                        <h2>Rangers v Liverpool</h2>
+                        <p>Result (Win): 1 - 7</p>
+                        <button class="btn"><a target="_blank" href="https://www.google.com/search?q=liverpool&rlz=1C1GCEB_enUS1022US1022&oq=liverpool&aqs=chrome.0.0i271j46i67i131i433j69i59l3j69i61l2j69i60.1151j1j7&sourceid=chrome&ie=UTF-8#sie=m;/g/11t9bkrv0d;2;/m/0c1q0;dt;fp;1;;;">Details</a></button>
+                    </div>
+                </div>
+                <div id="stats">
+                    <div class="stat">
+                        <h2>Top Scorer</h2>
+                        <p>
+                            Robert Firmmino with 6 goals.
+                        </p>
+                    </div>
+                    
+                    <div class="stat">
+                        <h2>Goal keeping</h2>
+                        <p>
+                            Alisson has 10 appearances with 4 clean sheets.
+                        </p>
+                    </div>
+                    <div class="stat">
+                        <h2>Largest Attendance</h2>
+                        <p>
+                            Highest attendance at Anfield was 53,328 on Aug 27th.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+              <span>Copyright 2022, Liverpool Fan</span>
+        </footer>
+    </body>
+</html>
