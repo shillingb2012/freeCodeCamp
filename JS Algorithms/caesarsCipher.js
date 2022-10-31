@@ -19,8 +19,8 @@ function rot13(str) {
         let tempIndex = letters.indexOf(strArr[char]);
         if (tempIndex >= 0) {
             tempIndex += 13; //shift the index 13 chars
-            if (tempIndex > 25) {
-                tempIndex -= 26; // account for shift where index is beyond index 25 to reset at beginning of index
+            if (tempIndex > letters.length-1) {
+                tempIndex -= letters.length; // account for shift where index is beyond index 25 to reset at beginning of index
             }
             newStrArr.push(letters[tempIndex]);
         }
