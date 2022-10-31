@@ -9,10 +9,7 @@ We'll also pass strings with special symbols, such as 2A3*3a2, 2A3 3a2, and 2_A3
 */
 
 function palindrome(str) {
-    // default palindrome is true
-    let isPal = true;
-
-    // remove all non-alphanumeric chars (\W would include underscores, has to use different regex)
+    // remove all non-alphanumeric chars and whitespace (\W would include underscores, has to use different regex)
     let updatedStr = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
 
     // create array of chars to iterate over 
@@ -20,9 +17,8 @@ function palindrome(str) {
 
     for(let i=0, j=charArr.length-1; i<j; i++, j--) {
         if(charArr[i] != charArr[j]) {
-            isPal = false;
-            break;
+            return false;
         }
     }
-    return isPal;
+    return true; // valid palindrome since we never hit the return false from above
 }
