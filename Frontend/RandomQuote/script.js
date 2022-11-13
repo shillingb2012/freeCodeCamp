@@ -1,6 +1,5 @@
 const projectName = 'random-quotes';
 let quotes;
-
 let currentQuote = "";
 let currentAuthor = "";
 
