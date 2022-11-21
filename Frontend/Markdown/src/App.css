@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.white-link {
+  color: white;
+}
+
+#author {
+  color: white;
+  font-style: italic;
+}
+
+#howTo{
+  margin: 15.5px auto;
+  max-width: 800px;
+}
+
+#builtBy {
+  padding-top: 10em;
+  font-size: calc(10px + 1vmin);
+}
+
+#editor {
+  width: 60%;
+  max-width: 725px;
+  height: 500px;
+}
+
+#preview {
+  width: 60%;
+  max-width: 725px;
+  height: 500px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  display: inline-block;
+  overflow: scroll;
+  resize: both;
+  color: black
+}
+
+#preview > ul {
+  padding: 0;
+  list-style-position: inside;
+}
+#preview > ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+img {
+  display: inline-block;
+  width: 80%;
+  max-width: 700px;
+}
