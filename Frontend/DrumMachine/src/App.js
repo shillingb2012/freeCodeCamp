@@ -88,7 +88,7 @@ class DrumPad extends React.Component {
 
   handleKeyPress(e) {
     let keypressLetter = e.key.toUpperCase();
-    if (keypressLetter == this.props.letter) {
+    if (keypressLetter === this.props.letter) {
       this.handleClick();
     }
   }
@@ -109,9 +109,6 @@ class DrumPad extends React.Component {
 
 // Class to map the audio object array to Drum Pad elements
 class DrumPadsBlock extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div id="drum-pads-block">
